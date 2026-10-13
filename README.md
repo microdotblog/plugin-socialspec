@@ -1,5 +1,7 @@
 # SocialSpec
 
+![icon](socialspec.png)
+
 A Micro.blog plug-in that adds [SocialSpec](https://socialspec.org/) discovery
 files to a site:
 
