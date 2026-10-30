@@ -8,7 +8,8 @@ files to a site:
 - `/.well-known/contact.vcf` contains the site author’s full name and, when
   configured, email address.
 - `/.well-known/about.md` contains the raw Markdown from the site’s `/about/`
-  page.
+  page, or the Micro.blog about text in `params.about_me` when that page doesn’t
+  exist.
 
 The files are generated with Hugo resources from the included
 `socialspec-plugin.html` partial.

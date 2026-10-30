@@ -24,4 +24,9 @@
 {{- with .Site.GetPage "/about" -}}
   {{- $aboutFile := resources.FromString ".well-known/about.md" .RawContent -}}
   {{- $aboutPublished := $aboutFile.RelPermalink -}}
+{{- else -}}
+  {{- with .Site.Params.about_me -}}
+    {{- $aboutFile := resources.FromString ".well-known/about.md" . -}}
+    {{- $aboutPublished := $aboutFile.RelPermalink -}}
+  {{- end -}}
 {{- end -}}
